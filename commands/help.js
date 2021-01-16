@@ -9,7 +9,8 @@ module.exports.run = async(bot, message, args) => {
             .setColor("#03fc0f")
             .addFields(
                 {name:"⭐mod", value: "`!help-mod`"},
-                {name:"😉fun", value: "`!help-fun`"}
+                {name:"😉fun", value: "`!help-fun`"},
+                {name:"🎫ticket", value: "`!help-ticket`"}
             )
             .setFooter("Help")
             .setTimestamp()
