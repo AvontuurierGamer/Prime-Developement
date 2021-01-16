@@ -32,7 +32,7 @@ fs.readdir("./commands/", (err, files) => {
 
         console.log(`${client.user.username} is online`);
 
-        client.user.setActivity("still in the making", {
+        client.user.setActivity("!help", {
             type: "WATCHING"
 });
 });
