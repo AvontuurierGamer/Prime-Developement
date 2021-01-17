@@ -8,7 +8,7 @@ module.exports.run = async(bot, message, args) => {
             .setTitle("Help-fun")
             .setColor("#03fc0f")
             .addFields(
-                {name:"sps", value: "`play stone paper scissor`"}
+                {name:"rps", value: "`play rock paper scissor`"}
             )
             .setFooter("Help-fun")
             .setTimestamp()
