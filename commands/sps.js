@@ -2,13 +2,13 @@ const discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
 
-    if(!args[0]) return message.reply("doe !sps <stone, paper or scissor>");
+    if(!args[0]) return message.reply("doe !rps <rock, paper or scissor>");
 
-    var options = ["stone", "paper", "scissor"];
+    var options = ["rock", "paper", "scissor"];
 
     var result = options[Math.floor(Math.random() * options.length)];
 
-    if(args[0].toUpperCase() == "STONE") {
+    if(args[0].toUpperCase() == "ROCK") {
 
         if(result == "paper") {
 
@@ -18,7 +18,7 @@ module.exports.run = async(bot, message, args) => {
 
             return message.channel.send(`I have ${result} :scissors:, You win!`);
   
-        } else if (result == "stone") {
+        } else if (result == "rock") {
 
             return message.channel.send(`I have ${result} :moyai:, It's a draw!`);
 
@@ -36,7 +36,7 @@ module.exports.run = async(bot, message, args) => {
 
             return message.channel.send(`I have ${result} :scissors:, I win!`);
   
-        } else if (result == "stone") {
+        } else if (result == "rock") {
 
             return message.channel.send(`I have ${result} :moyai:, You win!`);
 
@@ -54,7 +54,7 @@ module.exports.run = async(bot, message, args) => {
 
             return message.channel.send(`I have ${result} :scissors:, It's a draw!`);
   
-        } else if (result == "stone") {
+        } else if (result == "rock") {
 
             return message.channel.send(`I have ${result} :moyai:, I win!`);
 
